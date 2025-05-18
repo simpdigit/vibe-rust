@@ -1,18 +1,17 @@
+mod data_structures;
+
 use clap::Parser;
 use rand::RngCore;
 use bs58;
 
-mod vectors;
-
-use vectors::{
+use data_structures::vectors::{
     create_vector,
     double_vector,
     get_prime_numbers,
     sum_vector,
 };
 
-mod hashmaps;
-use hashmaps::{
+use data_structures::hashmaps::{
     setup_student_grades,
     Student
 };
